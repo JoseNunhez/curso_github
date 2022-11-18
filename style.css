@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Jost:wght@300;400;600&family=Titan+One&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+h2{
+  padding:1rem;
+}
+.contenedor-juego-nuevo p{
+ padding: 1rem
+}
+
+body {
+  background-color: rgb(164, 121, 121);
+  display: grid;
+  grid-template-columns: 1fr, 5fr, 1fr;
+  grid-template-rows: 1fr, 3rem;
+  grid-template-areas: 
+  "usuario main puntuaciones"
+  "footer footer footer";
+  background-size: cover;
+  font-family: "Fredoka One", cursive;
+  font-weight: 100;
+}
+
+.usuario {
+  grid-area: usuario;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  min-width: 300px;
+  padding: 2em;
+}
+
+.puntuaciones {
+  grid-area: puntuaciones;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  min-width: 300px;
+  padding: 2em;
+}
+#opciones-jugador h3{
+  padding: 3rem;
+}
+
+.container {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  padding: 2em;
+  background-color: rgba(255, 255, 255, 0.068);
+}
+/*Titulos*/
+.usuario h1 {
+  background-color: hwb(118 4% 43%);
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding: 0.5rem;
+  border-radius: 0.6em;
+  box-shadow: 0 0.3em 0.5em rgba(0, 0, 0, 0.35);
+}
+.puntuaciones h1 {
+  background-color: #ad0202;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding: 0.5rem;
+  border-radius: 0.6em;
+  box-shadow: 0 0.3em 0.5em rgba(0, 0, 0, 0.35);
+}
+.container h1 {
+  box-shadow: 0 0.3em 0.5em rgba(0, 0, 0, 0.35);
+  background-color: #0525b3;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding: 0.5rem;
+  border-radius: 0.6em;
+}
+
+/*Input*/
+
+/*botones*/
+
+#opciones-jugador {
+  margin: auto;
+  text-align: center;
+  font-family: "Fredoka One", cursive;
+  font-weight: 150;
+}
+
+#opciones-jugador div {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.2em 0 2.4em 0;
+}
+
+#opciones-jugador button {
+  border: 1px white;
+  margin-left: 1.5rem;
+  padding: 0.9em 1.2em;
+  position: relative;
+  display: inline-block;
+  box-sizing: inherit;
+  background-color: hsla(56, 100%, 50%, 0);
+  background-clip: text;
+  color: rgb(0, 0, 0);
+  border-radius: 20px;
+  text-transform: capitalize;
+  font-weight: bolder;
+  font-size: 17px;
+  box-shadow: 0 1.3em 2.5em rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  font-family: "Fredoka One", cursive;
+  font-weight: 200;
+}
+
+
+
+#opciones-jugador button:active {
+  border: 3px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+}
+#opciones-jugador button:disabled {
+  border: 1px solid #00000018;
+  color: #000000;
+  cursor: not-allowed;
+}
+
+#opciones-jugador button.activo {
+  border: 3px solid #000000;
+  color: #000000;
+  cursor: not-allowed;
+}
+/*LETRAS*/
+#contenedor-letras button:disabled{
+background-color: #383753;
+color: white;
+}
+
+.contenedor-letras {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6em;
+}
+
+#contenedor-letras button {
+  height: 4.7em;
+  width: 4.7em;
+  border-radius: 10em;
+  border: 3px solid rgb(255, 93, 44);
+  background-color: #f84e15;
+  color: rgb(0, 0, 0);
+  box-shadow: 0 1.3em 2.5em rgba(0, 0, 0, 0.288);
+  font-weight: bold;
+  font-style: italic;
+}
+
+.contenedor-juego-nuevo {
+  background-color: rgba(255, 255, 255, 0.562);
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 45%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 0%;
+  overflow: hidden;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.contenedor-juego-nuevo button {
+  height: 3.5em;
+  padding: 0.5em 0.9em;
+  border: 3px solid rgb(6, 172, 56);
+  background-color: rgb(3, 151, 53);
+  color: rgb(255, 255, 255);
+  border-radius: 0.6em;
+  text-transform: capitalize;
+  font-weight: lighter;
+  box-shadow: 0 1.3em 2.5em rgba(189, 188, 188, 0.589);
+  font-weight: bolder;
+}
+
+
+
+.hide {
+  display: none;
+}
+
+#section-input-jugador {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  font-size: 2.7em;
+  margin: 1em 0 1.5em 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+#imagenes-ahorcado {
+  display: flex;
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  margin-top: 15px;
+  border-radius: 80%;
+  overflow: hidden;
+  justify-content: center;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #aaa7a7;
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  height: 1.5rem;
+}
+
+footer p {
+  color: rgb(59, 59, 59);
+  margin: auto;
+}
+
+/*^Tabla de puntuaciones*/
+table{
+  margin: auto;
+}
+th{
+  padding: 1rem;
+  text-align: center;
+  border: 2px solid black;
+}
+td{
+  padding: 1rem;
+  border: 1px solid black;
+  text-align: center;
+}
+
+/*Edicion botones e input de nombre*/
+#usuario{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+}
+#usuario p{
+  text-align: center;
+  margin-bottom: 2rem;
+  color: rgb(0, 0, 0);
+  text-transform: capitalize;
+  font-weight: bolder;
+  font-size: 17px;
+  font-family: "Fredoka One", cursive;
+  font-weight: 200;
+}
+#usuario input{  
+  border: 1px white;
+  padding: 0.9em 1.2em;
+  margin-bottom: 2rem;
+  position: relative;
+  display: inline-block;
+  background-color: rgba(167, 142, 142, 0.414);
+  color: rgb(0, 0, 0);
+  border-radius: 20px;
+  text-transform: capitalize;
+  font-weight: bolder;
+  font-size: 17px;
+  box-shadow: 0 1.3em 2.5em rgba(0, 0, 0, 0.35);
+  cursor: text;
+  font-family: "Fredoka One", cursive;
+  font-weight: 200;
+
+}
+
+#usuario button {  
+  border: 1px white;
+  padding: 0.9em 1.2em;
+  position: relative;
+  display: inline-block;
+  box-sizing: inherit;
+  background-color: hsla(56, 100%, 50%, 0);
+  background-clip: text;
+  color: rgb(0, 0, 0);
+  border-radius: 20px;
+  text-transform: capitalize;
+  font-weight: bolder;
+  font-size: 17px;
+  box-shadow: 0 1.3em 2.5em rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  font-family: "Fredoka One", cursive;
+  font-weight: 200;
+}
+
+#usuario button:active {
+  border: 3px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+}
+
