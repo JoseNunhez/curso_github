@@ -174,7 +174,7 @@ mostrarOpciones();
 
 const generarPalabra = (palabrasAhorcadoValue) => {
   let buttonOpciones = document.querySelectorAll(".opciones");
-  imagenesAhorcado.innerHTML += '<img src="Imagenes/imagen0.png" alt="">';
+  imagenesAhorcado.innerHTML += '<img src="Imagenes/Imagen0.png" alt="">';
   //If optionValur matches the button innerText then highlight the button
   buttonOpciones.forEach((button) => {
     if (button.innerText.toLowerCase() === palabrasAhorcadoValue) {
